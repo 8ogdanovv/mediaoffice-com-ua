@@ -1,5 +1,5 @@
 <template>
-  <a
+  <router-link
     to="/"
     class="logo"
     width="201"
@@ -14,7 +14,7 @@
       <span class="i">І</span>
       <span class="s">С</span>
     </span>
-  </a>
+  </router-link>
 </template>
 
 <style>
@@ -197,6 +197,18 @@
     -o-transform: scale(1, 1.7) translateY(-0) rotateY(1turn);
     -ms-transform: scale(1, 1.7) translateY(-0) rotateY(1turn);
     transform: scale(1, 1.7) translateY(-0) rotateY(1turn);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
