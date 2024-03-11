@@ -27,6 +27,9 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
 
 #app {
   display: flex;
