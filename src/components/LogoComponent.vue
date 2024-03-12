@@ -200,18 +200,6 @@
   }
 }
 
-@keyframes scale-up {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .logo {
   width: 201px;
   height: 26px;

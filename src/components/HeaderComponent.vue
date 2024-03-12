@@ -1,10 +1,6 @@
 <template>
   <header class="header">
-    <div class="logos flex-wrap" :style="{ width: `${205 * logoCount}px` }">
-      <span v-for="(visible, index) in logoVisibility" :key="index">
-        <logo-component v-show="visible"/>
-      </span>
-    </div>
+    <logo-span />
 
     <nav class="nav-bar">
       <menu class="nav-menu">
@@ -27,58 +23,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
-import LogoComponent from '@/components/LogoComponent.vue';
-
-const logoCount = computeLogoCount();
-const logoVisibility = ref(Array.from({ length: logoCount }, () => false));
-
-function computeLogoCount() {
-  const logoWidth = 201; // Width of each .logo element
-  const viewportWidth = window.innerWidth; // Current viewport width
-
-  // Compute the number of .logo elements based on viewport width
-  return Math.ceil(viewportWidth / logoWidth);
-}
-
-function mountLogosStepByStep() {
-  let index = 0;
-  const interval = setInterval(() => {
-    if (index < logoCount) {
-      logoVisibility.value[index] = true;
-      index++;
-    } else {
-      clearInterval(interval);
-    }
-  }, 1000);
-}
-
-onMounted(() => {
-  mountLogosStepByStep();
-});
-
-onUnmounted(() => {
-  // Cleanup if needed
-});
+import LogoSpan from '@/components/LogoSpan.vue'
+import LogoComponent from '@/components/LogoComponent.vue'
 </script>
 
 <style lang="scss">
-.header {
-  width: 100%;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.logos {
-  position: sticky;
-  top: 0;
-  left: 0;
-  margin-bottom: 32px;
-}
-
 .nav-menu {
   list-style: none;
   display: flex;
