@@ -47,18 +47,19 @@ onMounted(() => mountLogosStepByStep())
   position: sticky;
   top: 0;
   left: 0;
-  margin-bottom: 32px;
 }
 
 @keyframes appearance {
   from {
     opacity: 0;
-    left: 26px;
+    left: 0;
+    transform: scale(2) translate(50%, 0%);
   }
 
   to {
     opacity: 1;
     left: 0;
+    transform: scale(1) translate(0, 0);
   }
 }
 

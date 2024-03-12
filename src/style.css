@@ -1,7 +1,9 @@
+/* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Special Elite", system-ui;
   font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
 
   --color-red: #ec3e01;
   --color-white: #ffffff;
@@ -46,6 +48,16 @@ a {
   background-color: var(--color-white);
   color: var(--color-black);
 
+}
+
+.type-writer,
+.type-writer:link,
+.type-writer:visited,
+.type-writer:hover,
+.type-writer:active {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {
