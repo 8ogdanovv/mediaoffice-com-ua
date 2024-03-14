@@ -44,17 +44,16 @@ import LogoComponent from '@/components/LogoComponent.vue'
 .logo {
   margin: 0;
   position: relative;
-  top: 5%;
+  top: 3px;
 }
 
 .nav-menu {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 2fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
   justify-content: center;
   align-content: center;
 
@@ -70,14 +69,19 @@ import LogoComponent from '@/components/LogoComponent.vue'
     align-items: center;
     justify-content: center;
     margin: 0.25rem;
+    text-align: center;
+    width: 100%;
+    height: 22.5px;
   }
 
   li:last-of-type {
     border-left: 1px #454f5b solid;
+    padding-left: 1rem;
   }
 }
 
 .nav-tel {
   color: var(--color-red) !important;
+  padding-left: 1rem;
 }
 </style>

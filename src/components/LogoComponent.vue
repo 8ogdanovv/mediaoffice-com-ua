@@ -259,11 +259,15 @@
   width: 21px;
 }
 .i {
-  width: 15px;
+  width: 16px;
 }
 
-.office > *:not(:last-of-type) {
+.office > *:not(.s) {
   margin-right: -1px;
+}
+
+.s {
+  margin-right: 1px;
 }
 
 .logo .media {

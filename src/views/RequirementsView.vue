@@ -1,5 +1,7 @@
 <template>
-  <h1>МедіаОфіс</h1>
+  <div>
+
+  </div>
 </template>
 
 <script setup>
@@ -7,7 +9,5 @@
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  margin: 0;
-}
+
 </style>

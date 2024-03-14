@@ -18,6 +18,10 @@ const routes = [
     component: () => import('@/views/ContactsView.vue'),
   },
   {
+    path: '/requirements',
+    component: () => import('@/views/RequirementsView.vue'),
+  },
+  {
     path: '/loader',
     component: () => import('@/components/LoaderComponent.vue'),
   },

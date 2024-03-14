@@ -45,16 +45,23 @@ a {
 a:link {
   color: var(--color-black);
 }
+
 a:visited {
   color: var(--color-black);
 }
-a:hover {
+
+a:not(.logo, .nav-tel):hover {
   color: var(--color-black);
   filter: invert(1);
   -webkit-filter: invert(1);
 }
+
 a:active {
   color: var(--color-black);
+}
+
+ol, ul, menu {
+  list-style: none;
 }
 
 #app {
