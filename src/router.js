@@ -6,8 +6,8 @@ const routes = [
     component: () => import('@/views/HomeView.vue'),
   },
   {
-    path: '/about',
-    component: () => import('@/views/AboutView.vue'),
+    path: '/company',
+    component: () => import('@/views/CompanyView.vue'),
   },
   {
     path: '/services',

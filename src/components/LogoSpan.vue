@@ -7,26 +7,30 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import LogoComponent from '@/components/LogoComponent.vue'
 
 
-function computeLogoCount() {
-  const logoWidth = 201 // Width of each .logo element
-  const viewportWidth = window.innerWidth // Current viewport width
-
-  // Compute the number of .logo elements based on viewport width
-  return Math.ceil(viewportWidth / logoWidth)
+function computeLogoVisibility() {
+  return Array.from({ length: logoCount.value }, () => false)
 }
 
-const logoCount = computeLogoCount()
-const logoVisibility = ref(Array.from({ length: logoCount }, () => false))
+const logoCount = ref(computeLogoCount())
+const logoVisibility = ref(computeLogoVisibility())
+
+function computeLogoCount() {
+  const logoWidth = 201 // Width of each .logo element
+  const viewportWidth = window.innerWidth; // Current viewport width
+
+  // Compute the number of .logo elements based on viewport width
+  return Math.ceil(viewportWidth / logoWidth);
+}
 
 function mountLogosStepByStep() {
   let index = 0
   const interval = setInterval(() => {
-    if (index < logoCount) {
-      logoVisibility.value[index] = true
+    if (index < logoCount.value) {
+      logoVisibility.value[index] = true;
       index++
     } else {
       clearInterval(interval);
@@ -34,7 +38,20 @@ function mountLogosStepByStep() {
   }, 1000)
 }
 
-onMounted(() => mountLogosStepByStep())
+onMounted(() => {
+  mountLogosStepByStep()
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
+
+function handleResize() {
+  logoCount.value = computeLogoCount()
+  logoVisibility.value = computeLogoVisibility()
+  mountLogosStepByStep()
+}
 </script>
 
 <style lang="scss" scoped>
@@ -46,20 +63,19 @@ onMounted(() => mountLogosStepByStep())
 .logos {
   position: sticky;
   top: 0;
-  left: 0;
 }
 
 @keyframes appearance {
   from {
     opacity: 0;
-    left: 0;
-    transform: scale(2) translate(50%, 0%);
+    left: 201px;
+    transform: scale(2);
   }
 
   to {
     opacity: 1;
     left: 0;
-    transform: scale(1) translate(0, 0);
+    transform: scale(1);
   }
 }
 
