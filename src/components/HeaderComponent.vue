@@ -41,43 +41,40 @@ import LogoComponent from '@/components/LogoComponent.vue'
   margin-top: 32px;
 }
 
-.logo {
-  margin: 0;
-  position: relative;
-  top: 3px;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  justify-content: center;
-  align-content: center;
-
-  width: 80dvw;
+  align-items: center;
   margin: 0 auto;
-  padding: 1rem;
-  color: var(--color-black);
-  background-color: var(--color-white);
+  padding: 0;
 
   li:not(:first-of-type, :last-of-type) {
     border-left: 1px solid var(--color-red);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0.25rem;
     text-align: center;
     width: 100%;
     height: 22.5px;
   }
 
   li:last-of-type {
-    border-left: 1px #454f5b solid;
+    border-left: 1px solid var(--color-gray);
     padding-left: 1rem;
   }
+
+  li:not(:first-of-type) {
+    justify-self: center;
+  }
+}
+
+.logo {
+  margin: 0;
+  position: relative;
+  top: 3px;
 }
 
 .nav-tel {
   color: var(--color-red) !important;
-  padding-left: 1rem;
 }
 </style>

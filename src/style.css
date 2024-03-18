@@ -11,6 +11,8 @@
 
   --color-red: #ec3e01;
   --color-white: #ffffff;
+  --color-gray: #454f5b;
+  --color-grey: #888888;
   --color-black: #0c0100;
 
   background-color: var(--color-red);
@@ -35,6 +37,19 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+}
+
+.header,
+.main,
+.footer {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  width: 80dvw;
+  padding: 1.25rem;
+}
+
+.main {
+  margin: -1px auto;
 }
 
 a {
@@ -72,10 +87,4 @@ ol, ul, menu {
   width: 100dvw;
   height: 100vh;
   overflow: hidden;
-}
-
-.main {
-  width: 80dvw;
-  background-color: var(--color-white);
-  color: var(--color-black);
 }
