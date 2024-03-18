@@ -1,5 +1,7 @@
 <template>
-  <main></main>
+  <mark>
+    &trade;
+  </mark>
 </template>
 
 <script setup>

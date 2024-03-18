@@ -18,7 +18,7 @@
 
 <script setup></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footer {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.25rem 0 0;
+  padding: 1.25rem 2.5rem 0 0;
 }
 
 .content,
@@ -46,18 +46,17 @@
   position: absolute;
   content: '';
   top: 0;
-  right: 0;
   height: 1px;
 }
 
 .content::before {
   background-color: var(--color-red);
-  width: 100%;
+  width: calc(100% - 1.25rem);
 }
 
 .blank::before {
+  width: 100%;
   background-color: var(--color-gray);
-  width: calc(100% - 1.25rem);
 }
 
 .requirements a {

@@ -1,7 +1,5 @@
 <template>
-  <main>
-    Company
-  </main>
+  Company
 </template>
 
 <script setup>

@@ -1,9 +1,7 @@
 <template>
-  <main>
-    <p>404</p>
-    <p>Цей маршрут '{{ routePath }}' не має кінцевого призначення, але зворотній шлях продовжує існувати.</p>
-    <p>Ось він, &mdash; <router-link :to="previousPath">{{ previousPath }}</router-link></p>
-  </main>
+  <p>404</p>
+  <p>Цей маршрут '{{ routePath }}' не має кінцевого призначення, але зворотній шлях продовжує існувати.</p>
+  <p>Ось він, &mdash; <router-link :to="previousPath">{{ previousPath }}</router-link></p>
 </template>
 
 <script setup>

@@ -52,6 +52,15 @@ body {
   margin: -1px auto;
 }
 
+/* .grid-layout {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.block-layout {
+  display: block !important;
+} */
+
 a {
   text-decoration: none;
   background-color: var(--color-white);

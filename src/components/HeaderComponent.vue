@@ -63,7 +63,7 @@ import LogoComponent from '@/components/LogoComponent.vue'
     padding-left: 1rem;
   }
 
-  li:not(:first-of-type) {
+  li:not(:first-of-type :last-of-type) {
     justify-self: center;
   }
 }
