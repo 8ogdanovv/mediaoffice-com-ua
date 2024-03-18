@@ -22,13 +22,14 @@ const routes = [
     component: () => import('@/views/RequirementsView.vue'),
   },
   {
-    path: '/loader',
-    component: () => import('@/components/LoaderComponent.vue'),
-  },
-  {
     // Catch all routes that don't match the previous ones
     path: '/:pathMatch(.*)*',
     component: () => import('@/views/NotFound.vue'),
+    props: route => ({ previousPath: route.params.pathMatch.length > 1
+      ? '/' + route.params.pathMatch.filter(
+        p => routes.find( ({ path }) => path.slice(1) === p )
+      )[0]
+      : '/' }), // Pass previousPath prop if coming from an existing route
   },
 ]
 

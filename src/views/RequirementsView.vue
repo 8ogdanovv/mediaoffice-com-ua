@@ -1,7 +1,5 @@
 <template>
-  <div>
-
-  </div>
+  <main></main>
 </template>
 
 <script setup>
@@ -10,6 +8,4 @@ import { onMounted } from 'vue'
 onMounted(() => document.title = 'Вимоги до макетів | МедіаОфіс')
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

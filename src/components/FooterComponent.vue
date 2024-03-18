@@ -3,6 +3,7 @@
     <span class="copyright">
       © Медіаофіс, 2009 – {{ new Date().getFullYear() }}
     </span>
+
     <span class="requirements">
       <router-link to="/requirements">
         Вимоги до макетів
@@ -11,10 +12,9 @@
   </footer>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footer {
   background-color: var(--color-white);
   width: 80dvw;

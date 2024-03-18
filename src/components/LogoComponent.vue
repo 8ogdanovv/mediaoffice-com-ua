@@ -255,15 +255,16 @@
   text-align: center;
 }
 
+.office > *:not(.s) {
+  margin-right: -1px;
+}
+
 .f {
   width: 21px;
 }
+
 .i {
   width: 16px;
-}
-
-.office > *:not(.s) {
-  margin-right: -1px;
 }
 
 .s {
@@ -297,14 +298,16 @@
 .logo:hover .o {
   animation: 1s rotate-ver;
 }
+
 .logo:hover .f {
   animation: 1s rotate-ver 0.5s;
 }
+
 .logo:hover .i {
   animation: 1s rotate-ver 1s;
 }
+
 .logo:hover .s {
   animation: 1s rotate-ver 1.5s;
 }
-
 </style>

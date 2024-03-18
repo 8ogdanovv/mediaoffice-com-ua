@@ -48,10 +48,6 @@ import LogoComponent from '@/components/LogoComponent.vue'
 }
 
 .nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
   justify-content: center;
