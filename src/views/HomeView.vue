@@ -22,6 +22,8 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import ImageHtmlComponent from '@/components/ImageHtmlComponent.vue'
+</script>
 
 <style lang="scss" scoped></style>
