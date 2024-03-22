@@ -1,7 +1,5 @@
 <template>
-  <main>
-    Services
-  </main>
+  Services
 </template>
 
 <script setup>

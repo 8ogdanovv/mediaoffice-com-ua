@@ -1,16 +1,15 @@
 <template>
   <p>404</p>
-  <p>Цей маршрут '{{ routePath }}' не має кінцевого призначення, але зворотній шлях продовжує існувати.</p>
+  <p>Цей маршрут '{{ routePath }}' не має кінцевого призначення, але зворотній
+    шлях продовжує існувати.</p>
   <p>
     Ось він, &mdash;&nbsp;
     <router-link :to="previousPath">
       {{
         previousPath !== '/undefined'
           ? previousPath
-          : ['/company', '/services', '/contacts', '/requirements'].filter(
-            r => $route.fullPath.startsWith(r))[0]
+          : availableRoutes.find(r => $route.fullPath.startsWith(r))
       }}
-      {{ console.log($route) }}
     </router-link>
   </p>
 </template>
@@ -21,8 +20,8 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const routePath = route.path ?? 'unknown' // Fallback to 'unknown' if route.path is undefined
 const { previousPath } = defineProps(['previousPath'])
+
+const availableRoutes = ['/company', '/services', '/contacts', '/requirements']
 </script>
 
-<style lang="scss" scoped>
-/* Add your custom styles here */
-</style>
+<style lang="scss" scoped></style>
