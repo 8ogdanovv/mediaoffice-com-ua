@@ -1,16 +1,19 @@
 <script setup>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
+import HeaderComponent from '@/components/HeaderComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 </script>
 
 <template>
   <header-component />
-  <main class="main" :class="$route.path.length > 1 ? 'grid-layout' : 'block-layout'">
+
+  <main class="main" :class="!$route.name ? 'grid-layout' : 'block-layout'">
     <router-view class="content"/>
-    <aside class="side-bar" v-show="$route.path.length > 1">
+
+    <aside class="side-bar" v-show="!$route.name">
       sidebar
     </aside>
   </main>
+
   <footer-component />
 </template>
 
