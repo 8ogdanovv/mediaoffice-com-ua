@@ -1,14 +1,16 @@
 <template>
   <p>404</p>
-  <p>Цей маршрут '{{ routePath }}' не має кінцевого призначення, але зворотній
-    шлях продовжує існувати.</p>
+  <p>
+    Цей маршрут '{{ routePath }}' не має кінцевого призначення, але зворотній
+    шлях продовжує існувати.
+  </p>
   <p>
     Ось він, &mdash;&nbsp;
     <router-link :to="previousPath">
       {{
         previousPath !== '/undefined'
           ? previousPath
-          : availableRoutes.find(r => $route.fullPath.startsWith(r))
+          : availableRoutes.find(route => $route.fullPath.startsWith(route))
       }}
     </router-link>
   </p>
