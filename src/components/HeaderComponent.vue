@@ -6,13 +6,13 @@
           <logo-component />
         </li>
         <li>
-          <router-link to="/company">Компанія</router-link>
+          <router-link to="/company" class="underline">Компанія</router-link>
         </li>
         <li>
-          <router-link to="/services">Послуги</router-link>
+          <router-link to="/services" class="underline">Послуги</router-link>
         </li class="type-writer">
         <li>
-          <router-link to="/contacts">Контакти</router-link>
+          <router-link to="/contacts" class="underline">Контакти</router-link>
         </li>
         <li>
           <span>

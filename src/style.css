@@ -50,7 +50,10 @@ body {
   position: relative;
 }
 
-
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
 /* .header:before,
 .header:after,
 .footer:before,
@@ -104,7 +107,7 @@ a:visited {
   color: var(--color-black);
 }
 
-a:not(.logo, .nav-tel):hover {
+a:not(.logo, .nav-tel, .company-link):hover {
   color: var(--color-black);
   filter: invert(1);
   -webkit-filter: invert(1);
@@ -112,6 +115,72 @@ a:not(.logo, .nav-tel):hover {
 
 a:active {
   color: var(--color-black);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@keyframes jump-right {
+  0% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  8.333% {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25.3%);
+    -moz-transform: translateX(25.3%);
+    -ms-transform: translateX(25.3%);
+    -o-transform: translateX(25.3%);
+}
+
+  16.666% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  25% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+}
+
+  33.333% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+  41.666% {
+    transform: translateX(75%);
+    -webkit-transform: translateX(75%);
+    -moz-transform: translateX(75%);
+    -ms-transform: translateX(75%);
+    -o-transform: translateX(75%);
+}
+
+  50% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+.jump-right-on-hover:hover {
+    animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
 
 ol, ul, menu {
