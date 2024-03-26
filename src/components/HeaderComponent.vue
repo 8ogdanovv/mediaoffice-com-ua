@@ -1,6 +1,4 @@
 <template>
-  <logo-span />
-
   <header class="header">
     <nav class="nav-bar">
       <menu class="nav-menu">
@@ -32,15 +30,10 @@
 </template>
 
 <script setup>
-import LogoSpan from '@/components/LogoSpan.vue'
 import LogoComponent from '@/components/LogoComponent.vue'
 </script>
 
 <style lang="scss" scoped>
-.header {
-  margin-top: 32px;
-}
-
 .nav-menu {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
