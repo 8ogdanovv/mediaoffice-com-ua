@@ -44,23 +44,20 @@ body {
 .footer {
   color: var(--color-black);
   background-color: var(--color-white);
-  width: 80dvw;
   padding: 1.25rem;
+  width: 80vw;
+}
+
+.header, .footer {
+  height: 10vh;
 }
 
 .main {
   margin: -1px auto;
+  height: calc(100vh - 20vh - 2.5rem - 29px - 32px);
 }
 
-/* .grid-layout {
-  display: grid;
-  grid-template-columns: 5fr 2fr;
-}
-
-.block-layout {
-  display: block !important;
-} */
-
+@media (orientation: portrait) {}
 a {
   text-decoration: none;
   background-color: var(--color-white);

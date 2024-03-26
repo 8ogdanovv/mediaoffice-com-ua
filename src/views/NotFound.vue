@@ -6,12 +6,8 @@
   </p>
   <p>
     Ось він, &mdash;&nbsp;
-    <router-link :to="previousPath">
-      {{
-        previousPath !== '/undefined'
-          ? previousPath
-          : availableRoutes.find(route => $route.fullPath.startsWith(route))
-      }}
+    <router-link :to="backRoutePath">
+      {{ backRoutePath }}
     </router-link>
   </p>
 </template>
@@ -22,8 +18,10 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const routePath = route.path ?? 'unknown' // Fallback to 'unknown' if route.path is undefined
 const { previousPath } = defineProps(['previousPath'])
-
 const availableRoutes = ['/company', '/services', '/contacts', '/requirements']
+const backRoutePath = previousPath !== '/undefined'
+  ? previousPath
+  : availableRoutes.find(route => routePath.startsWith(route))
 </script>
 
 <style lang="scss" scoped></style>
