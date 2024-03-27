@@ -38,6 +38,17 @@
   display: flex;
 }
 
+@keyframes moving-shine {
+  0% {}
+  50% {}
+  75% {}
+  100% {}
+}
+
+.call-to-action:hover {
+  animation: moving-shine 7.5s infinite;
+}
+
 .company-link {
   background: none;
   color: transparent;
@@ -50,13 +61,14 @@
 }
 
 .text-box {
-  width: 66%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   text-align: center;
   padding: 0.625rem;
+  margin-left: 5vmax;
   gap: 0.625rem;
   line-height: 1.75;
 }
