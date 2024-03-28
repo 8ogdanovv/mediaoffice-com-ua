@@ -8,34 +8,52 @@
       <p>
         Корпоративний одяг, термотрансфер, сублімація, шовкотрафарет,
         вивіски, таблички, покажчики, стійки, стенди, дисплеї...&nbsp;
-        <router-link to="/company" class="company-link jump-right-on-hover" title="Докладніше про компанію">&nbsp;</router-link>
+        <router-link to="/company" class="arrow-link jump-right-on-hover" title="Докладніше про компанію">&nbsp;</router-link>
       </p>
     </div>
   </section>
 
   <section class="services">
-    <h2>
-      ПОСЛУГИ
-    </h2>
-    <p>
-      УФ-друк на листових матеріалах, лазерне різання (гравіювання),
-      термогибка пластику, фрезерне різання на ЧПУ,
-      шовкотрафаретний друк, екосольвентний інтер'єрний друк,
-      сольвентний широкоформатний друк Детальніше про компанію ->
-    </p>
+    <div class="text-box">
+      <h2>
+        ПОСЛУГИ
+      </h2>
+      <p>
+        УФ-друк на листових матеріалах, лазерне різання (гравіювання),
+        термогибка пластику, фрезерне різання на ЧПУ,
+        шовкотрафаретний друк, екосольвентний інтер'єрний друк,
+        сольвентний широкоформатний друк&nbsp;
+        <router-link to="/services" class="arrow-link jump-right-on-hover" title="Докладніше про послуги">&nbsp;</router-link>
+      </p>
+    </div>
   </section>
 </template>
 
 <script setup></script>
 
 <style lang="scss" scoped>
-.call-to-action {
+.call-to-action,
+.services {
   background-image: url('./../assets/bg_top.jpg');
   background-position: center;
   background-size: cover;
   aspect-ratio: 4 / 1;
   color: var(--color-white);
   display: flex;
+  max-height: 20vh;
+  width: 100%;
+}
+
+.call-to-action {
+  background-image: url('./../assets/bg_top.jpg');
+}
+
+.services {
+  background-image: url('./../assets/bg_bottom.png');
+}
+
+.services h2 {
+  color: var(--color-red);
 }
 
 @keyframes moving-shine {
@@ -49,7 +67,7 @@
   animation: moving-shine 7.5s infinite;
 }
 
-.company-link {
+.arrow-link {
   background: none;
   color: transparent;
   background-image: url('./../assets/arrow.gif');

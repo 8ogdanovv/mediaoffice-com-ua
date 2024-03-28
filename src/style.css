@@ -107,7 +107,7 @@ a:visited {
   color: var(--color-black);
 }
 
-a:not(.logo, .nav-tel, .company-link):hover {
+a:not(.logo, .nav-tel, .arrow-link):hover {
   color: var(--color-black);
   filter: invert(1);
   -webkit-filter: invert(1);
