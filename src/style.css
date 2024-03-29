@@ -107,7 +107,7 @@ a:visited {
   color: var(--color-black);
 }
 
-a:not(.logo, .nav-tel, .arrow-link):hover {
+a.underline:hover {
   color: var(--color-black);
   filter: invert(1);
   -webkit-filter: invert(1);
@@ -178,7 +178,7 @@ a:active {
   }
 }
 
-.jump-right-on-hover:hover {
+*:has(.jump-right-on-hover):hover > .jump-right-on-hover {
     animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -webkit-animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
