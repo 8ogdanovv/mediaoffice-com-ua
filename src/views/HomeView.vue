@@ -50,8 +50,10 @@ import LinksBar from '@/components/LinksBar.vue'
   aspect-ratio: 4 / 1;
   color: var(--color-white);
   display: flex;
-  max-height: 20vh;
+  height: 17.5vh;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .call-to-action {
@@ -64,30 +66,45 @@ import LinksBar from '@/components/LinksBar.vue'
 
 .services h2 {
   color: var(--color-red);
+  margin: 0;
 }
 
 @keyframes moving-shine {
-  0% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {
+    background: linear-gradient(35deg, transparent 0%, var(--color-shine) 49%, var(--color-shine) 51%, transparent 100%);
+    transform: translateX(-50%);
+  }
+  50% {
+    background: linear-gradient(35deg, transparent 0%, var(--color-shine) 49%, var(--color-shine) 51%, transparent 100%);
+    transform: translateX(0%);
+  }
+  100% {
+    background: linear-gradient(35deg, transparent 0%, var(--color-shine) 49%, var(--color-shine) 51%, transparent 100%);
+    transform: translateX(-50%);
+  }
 }
 
-.call-to-action:hover {
+.call-to-action::after {
+  position: absolute;
+  content: '';
+  width: 300%;
+  height: 17.5vh;
+  top: 0;
+  left: 0;
   animation: moving-shine 7.5s infinite;
 }
 
 .text-box {
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0.625rem;
+  padding: 0.25rem;
   margin-left: 5vmax;
-  gap: 0.625rem;
-  line-height: 1.75;
+  gap: 0.125rem;
+  line-height: 1.25;
 }
 
 .text-link * {
