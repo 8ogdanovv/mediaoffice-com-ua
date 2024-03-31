@@ -71,16 +71,16 @@ import LinksBar from '@/components/LinksBar.vue'
 
 @keyframes moving-shine {
   0% {
-    background: linear-gradient(35deg, transparent 0%, var(--color-shine) 49%, var(--color-shine) 51%, transparent 100%);
-    transform: translateX(-50%);
-  }
-  50% {
-    background: linear-gradient(35deg, transparent 0%, var(--color-shine) 49%, var(--color-shine) 51%, transparent 100%);
+    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
     transform: translateX(0%);
   }
+  50% {
+    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
+    transform: translateX(-60%);
+  }
   100% {
-    background: linear-gradient(35deg, transparent 0%, var(--color-shine) 49%, var(--color-shine) 51%, transparent 100%);
-    transform: translateX(-50%);
+    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
+    transform: translateX(0%);
   }
 }
 
@@ -91,7 +91,7 @@ import LinksBar from '@/components/LinksBar.vue'
   height: 17.5vh;
   top: 0;
   left: 0;
-  animation: moving-shine 7.5s infinite;
+  animation: moving-shine 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
 }
 
 .text-box {
