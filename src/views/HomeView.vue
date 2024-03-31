@@ -17,6 +17,8 @@
     </div>
   </section>
 
+  <links-bar />
+
   <section class="services">
     <div class="text-box">
       <h2>
@@ -35,7 +37,9 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import LinksBar from '@/components/LinksBar.vue'
+</script>
 
 <style lang="scss" scoped>
 .call-to-action,

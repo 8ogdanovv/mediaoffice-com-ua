@@ -2,6 +2,13 @@
 import LogoSpan from '@/components/LogoSpan.vue'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const isHomeOr404 = computed(() =>
+  route.name === 'home' || route.name === '404'
+)
 </script>
 
 <template>
@@ -10,10 +17,10 @@ import FooterComponent from '@/components/FooterComponent.vue'
   <div class="box-shadow">
     <header-component />
 
-    <main class="main" :class="!$route.name ? 'grid-layout' : 'block-layout'">
+    <main class="main" :class="!isHomeOr404 ? 'grid-layout' : 'block-layout'">
       <router-view class="content"/>
 
-      <aside class="side-bar" v-show="!$route.name">
+      <aside class="side-bar" v-show="!isHomeOr404">
         sidebar
       </aside>
     </main>
