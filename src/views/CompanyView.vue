@@ -1,5 +1,7 @@
 <template>
-  Company
+  <p class="page-title head-line">
+    Про компанію
+  </p>
 </template>
 
 <script setup>

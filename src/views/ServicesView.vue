@@ -1,5 +1,7 @@
 <template>
-  Services
+  <p class="page-title head-line">
+    УФ-друк, лазерне різання, гравірування, згинання пластику, екосольвентний і сольвентний друк
+  </p>
 </template>
 
 <script setup>

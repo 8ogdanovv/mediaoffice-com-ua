@@ -1,11 +1,9 @@
 <template>
-  Promo
+  <p class="page-title head-line">
+    Рекламна та сувенірна продукція
+  </p>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

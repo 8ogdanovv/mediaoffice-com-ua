@@ -76,10 +76,6 @@ a {
   text-decoration: none;
 }
 
-/* a:link, a:visited, a:hover, a:active {
-  background: none !important;
-} */
-
 a:link {
   color: var(--color-black);
 }
@@ -90,6 +86,7 @@ a:visited {
 
 a.underline:hover {
   color: var(--color-black);
+  background: var(--color-white);
   filter: invert(1);
   -webkit-filter: invert(1);
 }
@@ -179,3 +176,69 @@ ol, ul, menu {
   height: 100vh;
   overflow: hidden;
 }
+
+.page-title {
+  background-image: url('./assets/bg_second.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-white);
+
+  height: 17.5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes moving-shine {
+  0% {
+    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
+    transform: translateX(0%);
+  }
+  50% {
+    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
+    transform: translateX(-60%);
+  }
+  100% {
+    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
+    transform: translateX(0%);
+  }
+}
+
+.head-line::after,
+.foot-line::after {
+  position: absolute;
+  content: '';
+  width: 300%;
+  height: 17.5vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.head-line,
+.foot-line {
+  overflow: hidden;
+}
+
+.head-line::after {
+  animation: moving-shine 10s ease-in-out infinite;
+}
+
+.foot-line::after {
+  animation: moving-shine 10s 5s ease-in-out infinite;
+  -webkit-animation: moving-shine 10s 5s ease-in-out infinite;
+}
+
+.head-line:hover::after,
+.foot-line:hover::after {
+  animation: moving-shine 5s ease-in-out infinite;
+  cursor: pointer;
+}
+

@@ -1,11 +1,9 @@
 <template>
-  Extra
+  <p class="page-title head-line">
+    Зовнішня реклама
+  </p>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

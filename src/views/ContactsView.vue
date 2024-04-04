@@ -1,5 +1,7 @@
 <template>
-  Contacts
+  <p class="page-title head-line">
+    Контакти
+  </p>
 </template>
 
 <script setup>

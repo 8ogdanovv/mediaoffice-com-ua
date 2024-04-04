@@ -1,5 +1,5 @@
 <template>
-  <section class="call-to-action">
+  <section class="call-to-action head-line">
     <div class="text-box">
       <h2>
         ДОВІРТЕСЯ ПРОФЕСІОНАЛАМ!
@@ -19,7 +19,7 @@
 
   <links-bar />
 
-  <section class="services">
+  <section class="services foot-line">
     <div class="text-box">
       <h2>
         ПОСЛУГИ
@@ -69,31 +69,6 @@ import LinksBar from '@/components/LinksBar.vue'
   margin: 0;
 }
 
-@keyframes moving-shine {
-  0% {
-    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
-    transform: translateX(0%);
-  }
-  50% {
-    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
-    transform: translateX(-60%);
-  }
-  100% {
-    background: linear-gradient(45deg, transparent 0%, transparent 48%, var(--color-shine) 50%, transparent 52%, transparent 100%);
-    transform: translateX(0%);
-  }
-}
-
-.call-to-action::after {
-  position: absolute;
-  content: '';
-  width: 300%;
-  height: 17.5vh;
-  top: 0;
-  left: 0;
-  animation: moving-shine 15s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-}
-
 .text-box {
   width: 65%;
   display: flex;
@@ -105,6 +80,7 @@ import LinksBar from '@/components/LinksBar.vue'
   margin-left: 5vmax;
   gap: 0.125rem;
   line-height: 1.25;
+  z-index: 1;
 }
 
 .text-link * {

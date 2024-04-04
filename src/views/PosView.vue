@@ -1,11 +1,9 @@
 <template>
-  POS
+  <p class="page-title head-line">
+    POS-матеріали
+  </p>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

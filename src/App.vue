@@ -33,6 +33,8 @@ const isHomeOr404 = computed(() =>
 .grid-layout {
   display: grid;
   grid-template-columns: 5fr 2fr;
+
+  grid-template-rows: 20vh 1fr 20vh;
 }
 
 .block-layout {
