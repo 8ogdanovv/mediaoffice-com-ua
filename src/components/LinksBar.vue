@@ -92,7 +92,7 @@
 .links-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  font-size: 70%;
+  font-size: 80%;
   height: 32vh;
 
   li {
