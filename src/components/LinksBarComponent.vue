@@ -135,16 +135,6 @@ h3 {
   text-align: center;
 
   color: var(--color-white);
-  text-shadow: 0 0 5px var(--color-black);
-  font-size: 125%;
-}
-
-.links-bar-sublist {
-  list-style-type: square;
-  padding: 0 1rem;
-
-  & li::marker {
-    color: var(--color-red);
-  }
+  text-shadow: 0 0 8px var(--color-black);
 }
 </style>
