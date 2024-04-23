@@ -1,5 +1,5 @@
 <template>
-  <ul class="links-bar links-bar-list">
+  <ul class="links-bar links-bar-list color-red-textShadow-black">
     <li class="links-bar-li">
       <router-link
         to="/service/pos"
@@ -97,7 +97,7 @@
 }
 
 h3 {
-  height: 11vh;
+  height: 12.5vh;
   padding: 1rem;
   margin: 1rem;
 
@@ -107,19 +107,17 @@ h3 {
 
   text-align: center;
 
-  color: var(--color-red);
-
   & .white-bg {
     background-color: #fffa;
     border-radius: 0.5rem;
   }
 
-  text-shadow: 0 0 2px var(--color-white);
   font-size: 115%;
-
   position: relative;
 
   border-radius: 0.5rem;
+
+  color: var(--color-red);
 
   &::after {
     position: absolute;

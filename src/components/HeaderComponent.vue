@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nav class="nav-bar">
-      <menu class="nav-menu">
+      <menu class="nav-menu red-shadowed">
         <li>
           <logo-component />
         </li>

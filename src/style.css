@@ -10,6 +10,7 @@
   line-height: 1.5;
 
   --color-red: #ec3e01;
+  --color-cyan: #01a5a3;
   --color-white: #ffffff;
   --color-gray: #454f5b;
   --color-grey: #888888;
@@ -70,6 +71,15 @@ h1, h2, p {
 .main
 {
   height: var(--insane-height);
+}
+
+.color-red-textShadow-black {
+  color: var(--color-red); /* This sets the color of the square markers */
+  text-shadow: 0 0 0.1vmin var(--color-black);
+}
+
+.red-shadowed {
+  text-shadow: 0 0 0.1vmin #4c4;
 }
 
 @media (orientation: portrait) {}
@@ -196,6 +206,17 @@ ol, ul, menu {
 
   position: relative;
   z-index: 1;
+}
+
+.content-absolute {
+  position: absolute;
+  top: 20vh;
+  left: 2vh;
+  height: 50vh;
+  width: 52.125vw;
+  padding: 1rem;
+  margin: 1rem;
+  overflow-y: scroll;
 }
 
 @keyframes moving-shine {

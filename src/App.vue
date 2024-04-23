@@ -18,7 +18,7 @@ const isHomeOr404 = computed(() =>
   <div class="box-shadow">
     <header-component />
 
-    <main class="main" :class="!isHomeOr404 ? 'grid-layout' : 'block-layout'">
+    <main class="main red-shadowed" :class="!isHomeOr404 ? 'grid-layout' : 'block-layout'">
       <router-view class="content"/>
 
       <aside class="side-bar" v-show="!isHomeOr404">

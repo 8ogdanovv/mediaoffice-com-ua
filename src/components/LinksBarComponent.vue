@@ -10,7 +10,7 @@
           POS матеріали
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist color-red-textShadow-cayan">
           <li>Стелажі</li>
           <li>Промо-столи (презентаційні столи)</li>
           <li>Шелфтокери</li>
@@ -35,7 +35,7 @@
           Друк на тканині, рекламні матеріали
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist color-red-textShadow-cayan">
           <li>Брендування промо-форми (промо-матеріалів)</li>
           <li>Брендування спортивної форми</li>
           <li>Індивідуальний пошив рекламного одягу</li>
@@ -54,7 +54,7 @@
           Рекламна та сувенірна продукція
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist color-red-textShadow-cayan">
           <li>Паперові пакети</li>
           <li>Магніти</li>
         </ul>
@@ -71,7 +71,7 @@
           Зовнішня реклама
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist color-red-textShadow-cayan">
           <li>Інформаційні дошки, таблички, вивіски</li>
           <li>Лайтбокси</li>
           <li>Об'ємні букви</li>
@@ -94,6 +94,12 @@
   grid-template-columns: repeat(4, 1fr);
   font-size: 80%;
   height: 32vh;
+
+  & ul {
+    list-style-type: square;
+    padding: 0 1rem;
+    margin: -0.25rem 0;
+  }
 
   li {
     &:first-of-type h3 {

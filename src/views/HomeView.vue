@@ -17,7 +17,7 @@
     </div>
   </section>
 
-  <links-bar-component />
+  <links-bar />
 
   <section class="services foot-line">
     <div class="text-box">
@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import LinksBarComponent from '@/components/LinksBarComponent.vue'
+import LinksBar from '@/components/LinksBarComponent.vue'
 </script>
 
 <style lang="scss" scoped>
