@@ -1,0 +1,1 @@
+import{f as e,c as t,o}from"./index-BNsAIJk7.js";const a={class:"page-title head-line"},r={__name:"ContactsView",setup(c){return e(()=>document.title="Контакти | МедіаОфіс"),(n,s)=>(o(),t("p",a," Контакти "))}};export{r as default};

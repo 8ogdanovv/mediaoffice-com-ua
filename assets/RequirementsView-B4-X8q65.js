@@ -1,1 +1,0 @@
-import{f as e,c as t,o as n}from"./index-DBDZLktE.js";const s={__name:"RequirementsView",setup(o){return e(()=>document.title="Вимоги до макетів | МедіаОфіс"),(r,a)=>(n(),t("mark",null," ™ "))}};export{s as default};
