@@ -1,6 +1,7 @@
 <script setup>
-import LogoSpan from '@/components/LogoSpan.vue'
+import LogoSpanComponent from '@/components/LogoSpanComponent.vue'
 import HeaderComponent from '@/components/HeaderComponent.vue'
+import SideBarComponent from '@/components/SideBarComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
@@ -12,7 +13,7 @@ const isHomeOr404 = computed(() =>
 </script>
 
 <template>
-  <logo-span />
+  <logo-span-component />
 
   <div class="box-shadow">
     <header-component />
@@ -21,7 +22,7 @@ const isHomeOr404 = computed(() =>
       <router-view class="content"/>
 
       <aside class="side-bar" v-show="!isHomeOr404">
-        sidebar
+        <SideBarComponent />
       </aside>
     </main>
 

@@ -70,7 +70,7 @@ const routes = [
   {
     // Catch all routes that don't match the previous ones
     path: '/:pathMatch(.*)*',
-    component: () => import('@/views/NotFound.vue'),
+    component: () => import('@/views/NotFoundView.vue'),
     name: '404',
     props: (route) => ({
       previousPath: route.params.pathMatch && route.params.pathMatch.length > 0
