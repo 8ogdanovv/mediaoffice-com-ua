@@ -145,8 +145,8 @@ h3 {
 
     filter: contrast(200%);
 
-    animation-name: jump-right;
-    animation-duration: 6s;
+    animation-name: jump-right-four-infinite;
+    animation-duration: 32s;
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-iteration-count: infinite;
 
@@ -155,23 +155,23 @@ h3 {
   }
 
   &.link1:not(:hover)::after {
-    animation-delay: 11s;
-    -webkit-animation-delay: 11s;
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
   }
 
   &.link2:not(:hover)::after {
-    animation-delay: 23s;
-    -webkit-animation-delay: 23s;
+    animation-delay: 20s;
+    -webkit-animation-delay: 20s;
   }
 
   &.link3:not(:hover)::after {
-    animation-delay: 31s;
-    -webkit-animation-delay: 31s;
+    animation-delay: 30s;
+    -webkit-animation-delay: 30s;
   }
 
   &.link4:not(:hover)::after {
-    animation-delay: 41s;
-    -webkit-animation-delay: 41s;
+    animation-delay: 40s;
+    -webkit-animation-delay: 40s;
   }
 
   &.h3-title:hover::after {

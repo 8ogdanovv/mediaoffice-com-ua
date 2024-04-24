@@ -171,6 +171,71 @@ a:active {
 }
 }
 
+@keyframes jump-right-four-infinite {
+  0% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  2% {
+    transform: translateX(25%);
+    -webkit-transform: translateX(25.3%);
+    -moz-transform: translateX(25.3%);
+    -ms-transform: translateX(25.3%);
+    -o-transform: translateX(25.3%);
+  }
+
+  4% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  6% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+  }
+
+  8% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  10% {
+    transform: translateX(75%);
+    -webkit-transform: translateX(75%);
+    -moz-transform: translateX(75%);
+    -ms-transform: translateX(75%);
+    -o-transform: translateX(75%);
+  }
+
+  12% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+  100% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
 *:has(.jump-right-on-hover):hover > .jump-right-on-hover {
     animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     -webkit-animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
