@@ -6,7 +6,7 @@
         class="link-bar-link"
         title="POS матеріали"
       >
-        <h3>
+        <h3 class="h3-title link1">
           <span class="white-bg">
             POS матеріали
           </span>
@@ -20,7 +20,7 @@
         class="link-bar-link"
         title="Друк на тканині, рекламні матеріали"
       >
-        <h3>
+        <h3 class="h3-title link2">
           <span class="white-bg">
             Друк на тканині, рекламні матеріали
           </span>
@@ -34,7 +34,7 @@
         class="link-bar-link"
         title="Рекламна та сувенірна продукція"
       >
-        <h3>
+        <h3 class="h3-title link3">
           <span class="white-bg">
             Рекламна та сувенірна продукція
           </span>
@@ -48,7 +48,7 @@
         class="link-bar-link"
         title="Зовнішня реклама"
       >
-        <h3>
+        <h3 class="h3-title link4">
           <span class="white-bg">
             Зовнішня реклама
           </span>
@@ -143,12 +143,45 @@ h3 {
     height: 1.5vh;
     z-index: 1;
 
-    filter: blur(0.5px) contrast(200%);
+    filter: contrast(200%);
+
+    animation-name: jump-right;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: infinite;
+
+    animation-delay: 0;
+    -webkit-animation-delay: 0;
   }
 
-  &:hover::after {
-    animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
-    -webkit-animation: jump-right 6s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  &.link1:not(:hover)::after {
+    animation-delay: 11s;
+    -webkit-animation-delay: 11s;
+  }
+
+  &.link2:not(:hover)::after {
+    animation-delay: 22s;
+    -webkit-animation-delay: 22s;
+  }
+
+  &.link3:not(:hover)::after {
+    animation-delay: 33s;
+    -webkit-animation-delay: 33s;
+  }
+
+  &.link4:not(:hover)::after {
+    animation-delay: 44s;
+    -webkit-animation-delay: 44s;
+  }
+
+  &.h3-title:hover::after {
+    animation-name: jump-right;
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-iteration-count: infinite;
+
+    animation-delay: 0 !important;
+    -webkit-animation-delay: 0 !important;
   }
 }
 </style>

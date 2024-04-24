@@ -162,6 +162,13 @@ a:active {
     -ms-transform: translate(0);
     -o-transform: translate(0);
   }
+  100% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
 }
 
 *:has(.jump-right-on-hover):hover > .jump-right-on-hover {
