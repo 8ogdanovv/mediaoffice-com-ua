@@ -4,10 +4,6 @@
   </p>
 </template>
 
-<script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => document.title = 'Про компанію | МедіаОфіс')
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

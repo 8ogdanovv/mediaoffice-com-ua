@@ -73,13 +73,9 @@ h1, h2, p {
   height: var(--insane-height);
 }
 
-.color-red-textShadow-black {
-  color: var(--color-red); /* This sets the color of the square markers */
-  text-shadow: 0 0 0.1vmin var(--color-black);
-}
-
-.red-shadowed {
-  text-shadow: 0 0 0.1vmin #4c4;
+.page-title,
+.text-shadow-gold * {
+  text-shadow: 0 0 0.5vmin #ffd700ab;
 }
 
 @media (orientation: portrait) {}

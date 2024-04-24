@@ -1,5 +1,5 @@
 <template>
-  <ul class="links-bar links-bar-list">
+  <ul class="links-bar links-bar-list text-shadow-gold">
     <li class="links-bar-li">
       <router-link
         to="/service/pos"
@@ -7,7 +7,9 @@
         title="POS матеріали"
       >
         <h3>
-          POS матеріали
+          <p>
+            POS матеріали
+          </p>
         </h3>
 
         <ul class="links-bar-sublist color-red-textShadow-cayan">
@@ -32,7 +34,9 @@
         title="Друк на тканині, рекламні матеріали"
       >
         <h3>
-          Друк на тканині, рекламні матеріали
+          <p>
+            Друк на тканині, рекламні матеріали
+          </p>
         </h3>
 
         <ul class="links-bar-sublist color-red-textShadow-cayan">
@@ -51,7 +55,9 @@
         title="Рекламна та сувенірна продукція"
       >
         <h3>
-          Рекламна та сувенірна продукція
+          <p>
+            Рекламна та сувенірна продукція
+          </p>
         </h3>
 
         <ul class="links-bar-sublist color-red-textShadow-cayan">
@@ -68,7 +74,9 @@
         title="Зовнішня реклама"
       >
         <h3>
-          Зовнішня реклама
+          <p>
+            Зовнішня реклама
+          </p>
         </h3>
 
         <ul class="links-bar-sublist color-red-textShadow-cayan">
@@ -99,6 +107,10 @@
     list-style-type: square;
     padding: 0 1rem;
     margin: -0.25rem 0;
+
+    & ::marker {
+      color: var(--color-red);
+    }
   }
 
   li {
@@ -141,6 +153,15 @@ h3 {
   text-align: center;
 
   color: var(--color-white);
-  text-shadow: 0 0 8px var(--color-black);
+  text-shadow: 0 0 0.5rem var(--color-black);
+  overflow: hidden;
+
+  & > p {
+    background: var(--color-shadow);
+    position: relative;
+    top: -0.0666rem;
+    padding: 0;
+    border-radius: 1rem;
+  }
 }
 </style>

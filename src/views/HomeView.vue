@@ -42,6 +42,11 @@ import LinksBar from '@/components/LinksBarComponent.vue'
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  position: relative;
+  top: -0.333rem;
+}
+
 .call-to-action,
 .services {
   background-image: url('./../assets/bg_top.jpg');
@@ -78,9 +83,12 @@ import LinksBar from '@/components/LinksBarComponent.vue'
   text-align: center;
   padding: 0.25rem;
   margin-left: 5vmax;
-  gap: 0.125rem;
   line-height: 1.25;
   z-index: 1;
+
+  h2 {
+    margin: -0.25rem 0;
+  }
 }
 
 .text-link * {

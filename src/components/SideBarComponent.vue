@@ -1,5 +1,5 @@
 <template>
-  <ul class="links-bar links-bar-list color-red-textShadow-black">
+  <ul class="links-bar links-bar-list side-bar">
     <li class="links-bar-li">
       <router-link
         to="/service/pos"
@@ -96,8 +96,17 @@
   }
 }
 
+.side-bar {
+  display: grid;
+
+  grid-template-rows: repeat(1fr, 4);
+
+  & h3 {
+    height: 10.5vh;
+  }
+}
+
 h3 {
-  height: 12.5vh;
   padding: 1rem;
   margin: 1rem;
 
