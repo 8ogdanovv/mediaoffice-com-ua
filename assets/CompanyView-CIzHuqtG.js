@@ -1,1 +1,0 @@
-import{f as e,c as t,o}from"./index-BNsAIJk7.js";const a={class:"page-title head-line"},p={__name:"CompanyView",setup(n){return e(()=>document.title="Про компанію | МедіаОфіс"),(c,s)=>(o(),t("p",a," Про компанію "))}};export{p as default};
