@@ -160,18 +160,18 @@ h3 {
   }
 
   &.link2:not(:hover)::after {
-    animation-delay: 22s;
-    -webkit-animation-delay: 22s;
+    animation-delay: 23s;
+    -webkit-animation-delay: 23s;
   }
 
   &.link3:not(:hover)::after {
-    animation-delay: 33s;
-    -webkit-animation-delay: 33s;
+    animation-delay: 31s;
+    -webkit-animation-delay: 31s;
   }
 
   &.link4:not(:hover)::after {
-    animation-delay: 44s;
-    -webkit-animation-delay: 44s;
+    animation-delay: 41s;
+    -webkit-animation-delay: 41s;
   }
 
   &.h3-title:hover::after {
