@@ -1,5 +1,5 @@
 <template>
-  <ul class="links-bar links-bar-list text-shadow-gold">
+  <ul class="links-bar links-bar-list">
     <li class="links-bar-li">
       <router-link
         to="/service/pos"
@@ -12,7 +12,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist color-red-textShadow-cayan">
+        <ul class="links-bar-sublist">
           <li>Стелажі</li>
           <li>Промо-столи (презентаційні столи)</li>
           <li>Шелфтокери</li>
@@ -39,7 +39,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist color-red-textShadow-cayan">
+        <ul class="links-bar-sublist">
           <li>Брендування промо-форми (промо-матеріалів)</li>
           <li>Брендування спортивної форми</li>
           <li>Індивідуальний пошив рекламного одягу</li>
@@ -60,7 +60,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist color-red-textShadow-cayan">
+        <ul class="links-bar-sublist">
           <li>Паперові пакети</li>
           <li>Магніти</li>
         </ul>
@@ -79,7 +79,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist color-red-textShadow-cayan">
+        <ul class="links-bar-sublist">
           <li>Інформаційні дошки, таблички, вивіски</li>
           <li>Лайтбокси</li>
           <li>Об'ємні букви</li>
@@ -143,7 +143,6 @@
 
 h3 {
   height: 7vh;
-  padding: 0.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 
@@ -152,12 +151,11 @@ h3 {
   justify-content: center;
   text-align: center;
 
-  color: var(--color-white);
-  text-shadow: 0 0 0.5rem var(--color-black);
+  color: var(--color-red);
   overflow: hidden;
 
   & > p {
-    background: var(--color-shadow);
+    background: var(--color-half-white);
     position: relative;
     top: -0.0666rem;
     padding: 0;

@@ -117,7 +117,7 @@ h3 {
   text-align: center;
 
   & .white-bg {
-    background-color: #fffa;
+    background-color: var(--color-half-white);
     border-radius: 0.5rem;
   }
 
