@@ -10,17 +10,31 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;професійній техніці,<br />
     нас обирають, радять, нам довіряють, з нами лишаються:
 
-    + L'Oreal;
-    + Maybelline;
-    + Eva.
+    <vueper-slides
+      class="no-shadow"
+      transition-speed="1000"
+      :bullets="false"
+      :arrows="false"
+      :fixed-height="true"
+      :autoplay="true"
+    >
+      <vueper-slide
+        v-for="brand, idx in [`L'Oreal`, 'Maybelline','Eva']"
+        :key="idx"
+        :title="brand"
+        :style="'background-color: ' + ['#ff5252', '#42b983'][idx % 2]"
+      />
+    </vueper-slides>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+</script>
 
 <style lang="scss" scoped>
 .slider {
-
   color: white;
   background: black;
 
@@ -32,4 +46,6 @@
     font-size: 15vh;
   }
 }
+
+.vueperslides--fixed-height { height: 4.5vh; }
 </style>
