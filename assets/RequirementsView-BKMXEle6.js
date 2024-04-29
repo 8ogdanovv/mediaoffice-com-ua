@@ -1,0 +1,1 @@
+import{_ as t,c as o,b as s,w as c,r as a,o as n,e as r}from"./index-BRe5wpJE.js";const _={},i={class:"Yaroslav-the-Wise"};function l(d,f){const e=a("router-link");return n(),o("section",i,[s(e,{to:"/contacts"},{default:c(()=>[r(" ₴ ")]),_:1})])}const p=t(_,[["render",l],["__scopeId","data-v-efa59451"]]);export{p as default};
