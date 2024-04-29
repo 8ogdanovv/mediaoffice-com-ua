@@ -51,7 +51,7 @@
 
 .content::before {
   background-color: var(--color-red);
-  width: calc(100% - 1.25rem);
+  width: calc(100%); /* there was 1.25rem gap via decreasing 100% width */
 }
 
 .blank::before {

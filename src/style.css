@@ -16,6 +16,7 @@
   --color-half-white: #fffa;
   --color-gray: #454f5b;
   --color-grey: #888888;
+  --color-b-grey: #bbb;
   --color-black: #0c0100;
   --color-shadow: #0c010088;
   --color-shine: #fff6;
@@ -38,6 +39,47 @@
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-grey);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--color-white);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gray);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: var(--color-b-grey);
+}
+
+*::selection {
+  background: var(--color-gold);
+  color: var(--color-red);
+}
+
+*::-moz-selection {
+  background: var(--color-gold);
+  color: var(--color-red);
+}
+
+*::-webkit-selection {
+  background: var(--color-gold);
+  color: var(--color-red);
 }
 
 body {
@@ -281,13 +323,28 @@ ol, ul, menu {
 
 .content-absolute {
   position: absolute;
-  top: 20vh;
-  left: 2vh;
-  height: 50vh;
-  width: 52.125vw;
+  left: 0.25rem;
+  width: 54.2vw;
   padding: 1rem;
   margin: 1rem;
-  overflow-y: scroll;
+  overflow-y: auto;
+  border: 1px solid var(--color-red);
+}
+/* --insane-height: calc(100vh - 20vh - 2.5rem - 29px - 32px); */
+.vh47 {
+  height: 47vh;
+}
+
+.vh20 {
+  height: 20vh;
+}
+
+.top20vh {
+  top: 20vh;
+}
+
+.top40vh {
+  top: 40vh;
 }
 
 .head-line::after,

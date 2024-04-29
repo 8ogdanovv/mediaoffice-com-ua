@@ -88,11 +88,10 @@
 
   li:not(:last-of-type) h3 {
     margin-right: 0.5rem;
-    width: calc(100% - 0.5rem);
   }
 
-  li:last-of-type h3 {
-    width: 100%;
+  li h3 {
+    width: calc(100% - 0.5rem);
   }
 }
 
