@@ -3,7 +3,7 @@
     УФ-друк, лазерне різання, гравірування, згинання пластику, екосольвентний і сольвентний друк
   </p>
 
-  <section class="content-absolute vh47 top20vh">
+  <section class="content-absolute height-content content-top-offset">
 
 
     УФ-друк на листових матеріалах

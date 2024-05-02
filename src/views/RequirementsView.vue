@@ -1,7 +1,7 @@
 <template>
   <section class="Yaroslav-the-Wise">
     <router-link to="/contacts">
-      ₴
+      &nbsp;₴&nbsp;
     </router-link>
   </section>
 </template>

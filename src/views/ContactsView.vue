@@ -3,8 +3,10 @@
     Контакти
   </p>
 
-  <section class="content-absolute top20vh vh47">
-    Телефони:
+  <section class="content-absolute content-top-offset height-content">
+    <u>
+      Телефони:
+    </u>
     <br />
     +38 (044) 465-98-44
     <br />
@@ -13,7 +15,9 @@
     +38 (067) 100-98-44
     <br />
     <br />
-    E-mail:
+    <u>
+      E-mail:
+    </u>
     <br />
     mediaoffice_pos@ukr.net
     <br />

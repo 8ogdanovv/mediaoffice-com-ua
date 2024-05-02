@@ -67,7 +67,7 @@
   grid-template-rows: repeat(4, 1fr);
 
   li {
-    height: calc(var(--insane-height) / 4);
+    height: calc(var(--height-main) / 4);
 
     &:first-of-type h3 {
       background-image: url('./../assets/pict_1.jpg');

@@ -1,5 +1,6 @@
 <template>
-  <section class="content-absolute 25vh top40vh slider">
+  <section class="content-absolute 25vh happy-clients-top-offset slider">
+    <!-- Your content here -->
     Заради брендової впізнаваності,<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;бізнесової ефективності і<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;рекламно-промоційної експресивності,<br />
@@ -19,10 +20,9 @@
       :autoplay="true"
     >
       <vueper-slide
-        v-for="brand, idx in [`L'Oreal`, 'Maybelline','Eva']"
+        v-for="(slide, idx) in slides"
         :key="idx"
-        :title="brand"
-        :style="'background-color: ' + ['#ff5252', '#42b983'][idx % 2]"
+        :content="slide.content"
       />
     </vueper-slides>
   </section>
@@ -31,21 +31,36 @@
 <script setup>
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
+
+const brands = ['LOreal', 'Maybelline', 'Eva', 'Prostor', 'FozzyGroup', 'Fora'];
+
+const slides = brands.map(brand => ({
+  content: `<div style="background: url('${brand}_logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center;" class="content-image"></div>`
+}));
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .slider {
-  color: white;
-  background: black;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    content: 'SLIDER';
-    color: #8888;
-    font-size: 15vh;
-  }
+  color: var(--color-red);
+  padding-bottom: 0;
+  border: none;
 }
 
-.vueperslides--fixed-height { height: 4.5vh; }
+.vueperslides--fixed-height { height: 3vh; }
+
+.vueperslide__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3vh;
+}
+
+.content-image {
+  height: 3vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 </style>
