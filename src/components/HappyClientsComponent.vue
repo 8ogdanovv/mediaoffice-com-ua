@@ -32,7 +32,15 @@
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
-const brands = ['LOreal', 'Maybelline', 'Eva', 'Prostor', 'FozzyGroup', 'Fora'];
+const brands = [
+  'Eva',
+  'Fora',
+  'FozzyGroup',
+  'LOreal',
+  'Maybelline',
+  'Prostor',
+  'Watsons',
+];
 
 const slides = brands.map(brand => ({
   content: `<div style="background: url('${brand}_logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center;" class="content-image"></div>`

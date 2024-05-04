@@ -336,7 +336,7 @@ ol, ul, menu {
   height: var(--height-content);
 }
 
-.vh20 {
+.height-20vh {
   height: 20vh;
 }
 
