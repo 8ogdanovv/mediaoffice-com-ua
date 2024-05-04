@@ -1,5 +1,5 @@
 <template>
-  <section class="content-absolute 25vh happy-clients-top-offset slider">
+  <section class="content-absolute 25vh happy-clients-top-offset slider text-fat">
     <!-- Your content here -->
     Заради брендової впізнаваності,<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;бізнесової ефективності і<br />
@@ -52,6 +52,8 @@ const slides = brands.map(brand => ({
   color: var(--color-red);
   padding-bottom: 0;
   border: none;
+
+  text-shadow: 0 0 1px var(--color-red);
 }
 
 .vueperslides--fixed-height { height: 3vh; }
