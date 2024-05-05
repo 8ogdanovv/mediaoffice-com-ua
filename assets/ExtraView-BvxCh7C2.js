@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c}from"./index-CwQEX6Gm.js";const o={},s={class:"page-title head-line"};function a(n,r){return c(),t("p",s," Зовнішня реклама ")}const i=e(o,[["render",a]]);export{i as default};
