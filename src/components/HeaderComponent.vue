@@ -49,6 +49,8 @@ import LogoComponent from '@/components/LogoComponent.vue'
     text-align: center;
     width: 100%;
     height: 22.5px;
+
+    text-shadow: 0 0 1px var(--color-black);
   }
 
   li:last-of-type {

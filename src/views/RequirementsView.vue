@@ -11,6 +11,10 @@
 <style lang="scss" scoped>
 .Yaroslav-the-Wise {
   aspect-ratio: 1198 / 635;
+  max-height: calc(var(--height-main) / 2);
+  min-width: 65vmin;
+  margin: auto;
+
   background-image: url('./../assets/Yaroslav-the-Wise.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -27,6 +31,8 @@
     width: 100%;
     height: auto;
     aspect-ratio: 1198 / 635;
+
+
     background-image: url('./../assets/Yaroslav-the-Wise.jpg');
     background-size: 200%;
     background-repeat: no-repeat;
@@ -42,6 +48,7 @@
     width: 100%;
     height: auto;
     aspect-ratio: 1198 / 635;
+
     background-image: url('./../assets/Yaroslav-the-Wise.jpg');
     background-size: 400%;
     background-repeat: no-repeat;

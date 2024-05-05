@@ -126,6 +126,7 @@ h3 {
   border-radius: 0.5rem;
 
   color: var(--color-red);
+  text-shadow: 0 0 1px var(--color-red);
 
   &::after {
     position: absolute;

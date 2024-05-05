@@ -56,21 +56,43 @@ const slides = brands.map(brand => ({
   text-shadow: 0 0 1px var(--color-red);
 }
 
-.vueperslides--fixed-height { height: 3vh; }
-
 .vueperslide__content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3vh;
 }
 
 .content-image {
-  height: 3vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media (orientation: landscape) {
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .vueperslides--fixed-height {
+    height: 25vh;
+    width: calc(var(--width-content) / 2);
+  }
+
+  .vueperslide__content,
+  .content-image {
+    height: 8vh;
+  }
+}
+
+@media (orientation: portrait) {
+  .vueperslides--fixed-height { height: 3vh; }
+
+  .vueperslide__content,
+  .content-image {
+    height: 3vh;
+  }
 }
 </style>

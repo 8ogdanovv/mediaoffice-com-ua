@@ -32,16 +32,4 @@
 import HappyClientsComponent from '../components/HappyClientsComponent.vue'
 </script>
 
-<style lang="scss" scoped>
-.general {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  p::first-letter {
-    position: relative;
-    font-size: 150%;
-    line-height: 100%;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

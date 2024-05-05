@@ -24,6 +24,8 @@
   --height-main: calc(100vh - 20vh - 2.5rem - 29px - 32px);
   --height-content: calc(var(--height-main) - 17.5vh - 3rem);
 
+  --width-content: calc((80vw - 2.5rem) / 7 * 5);
+
   background-color: var(--color-red);
   color: var(--color-black);
 
@@ -325,11 +327,17 @@ ol, ul, menu {
 .content-absolute {
   position: absolute;
   left: 0.25rem;
-  width: 54.2vw;
+  width: var(--width-content);
   padding: 1rem 0.75rem;
   margin: 0.75rem 1rem;
   overflow-y: auto;
   border: 1px solid var(--color-red);
+}
+
+.content-absolute p::first-letter {
+  margin-left: 1ch;
+  font-size: 150%;
+  color: var(--color-red);
 }
 
 .height-content {
@@ -392,4 +400,44 @@ ol, ul, menu {
 .foot-line:hover::after {
   animation: moving-shine 5s ease-in-out infinite;
   cursor: pointer;
+}
+
+.general {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.general p::first-letter {
+
+}
+
+.gap0_5rem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.red-square-marked-list {
+  list-style-type: square;
+  padding: 0 1rem;
+  margin: -0.25rem 0;
+}
+
+.red-square-marked-list > li::marker {
+  color: var(--color-red);
+}
+
+.text-red {
+  color: var(--color-red);
+  text-shadow: 0 0 1px var(--color-red);
+}
+
+.text-black {
+  color: var(--color-black);
+  text-shadow: 0 0 1px var(--color-black);
+}
+
+figure, figcaption {
+  margin:  0.5rem 0;
 }

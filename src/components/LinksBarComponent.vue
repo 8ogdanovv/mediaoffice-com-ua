@@ -1,5 +1,5 @@
 <template>
-  <ul class="links-bar links-bar-list">
+  <ul class="links-bar links-bar-list red-square-marked-list">
     <li class="links-bar-li">
       <router-link
         to="/service/pos"
@@ -12,7 +12,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist red-square-marked-list">
           <li>Стелажі</li>
           <li>Промо-столи (презентаційні столи)</li>
           <li>Шелфтокери</li>
@@ -39,7 +39,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist red-square-marked-list">
           <li>Брендування промо-форми (промо-матеріалів)</li>
           <li>Брендування спортивної форми</li>
           <li>Індивідуальний пошив рекламного одягу</li>
@@ -60,7 +60,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist red-square-marked-list">
           <li>Паперові пакети</li>
           <li>Магніти</li>
         </ul>
@@ -79,7 +79,7 @@
           </p>
         </h3>
 
-        <ul class="links-bar-sublist">
+        <ul class="links-bar-sublist red-square-marked-list">
           <li>Інформаційні дошки, таблички, вивіски</li>
           <li>Лайтбокси</li>
           <li>Об'ємні букви</li>
@@ -104,13 +104,8 @@
   height: 32vh;
 
   & ul {
-    list-style-type: square;
     padding: 0 1rem;
     margin: -0.25rem 0;
-
-    & ::marker {
-      color: var(--color-red);
-    }
   }
 
   li {
@@ -152,6 +147,7 @@ h3 {
   text-align: center;
 
   color: var(--color-red);
+  text-shadow: 0 0 1px var(--color-red);
   overflow: hidden;
 
   & > p {
