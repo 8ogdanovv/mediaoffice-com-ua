@@ -1,1 +1,0 @@
-import{_ as e,c,o}from"./index-CwQEX6Gm.js";const t={},s={class:"page-title head-line"};function n(r,a){return o(),c("p",s," Рекламна та сувенірна продукція ")}const i=e(t,[["render",n]]);export{i as default};

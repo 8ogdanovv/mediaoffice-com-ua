@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as c}from"./index-CwQEX6Gm.js";const n={},o={class:"page-title head-line"};function s(r,a){return c(),t("p",o," Друк на тканині, рекламні матеріали ")}const i=e(n,[["render",s]]);export{i as default};
