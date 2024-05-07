@@ -340,12 +340,12 @@ ol, ul, menu {
   color: var(--color-red);
 }
 
-.content-block:not(:last-child) {
+.content-block {
   position: relative;
   padding-bottom: 2rem;
 }
 
-.content-block::after {
+.content-block:not(:last-child)::after {
   content: '';
   position: absolute;
   width: 100%;
