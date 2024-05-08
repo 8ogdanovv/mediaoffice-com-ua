@@ -93,7 +93,7 @@ const router = createRouter({
   routes,
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, __from, next) => {
   if (to.meta && to.meta.title) {
     document.title = to.meta.title
   }
