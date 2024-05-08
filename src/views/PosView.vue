@@ -4,10 +4,6 @@
   </p>
 </template>
 
-<script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => console.log('POS!'))
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

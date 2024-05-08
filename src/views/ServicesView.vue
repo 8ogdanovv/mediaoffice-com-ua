@@ -5,6 +5,8 @@
 
   <section class="content-absolute height-content content-top-offset gap0_5rem">
 
+    <slide-show-component />
+
     <div class="content-block">
       <h4 class="text-red">
         УФ-друк на листових матеріалах
@@ -291,6 +293,8 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import SlideShowComponent from '../components/SlideShowComponent.vue';
+</script>
 
 <style lang="scss" scoped></style>

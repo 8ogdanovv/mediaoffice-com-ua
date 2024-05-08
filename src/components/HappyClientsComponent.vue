@@ -39,6 +39,7 @@ const brands = [
   'LOreal',
   'Maybelline',
   'Prostor',
+  'Vichy',
   'Watsons',
 ];
 
