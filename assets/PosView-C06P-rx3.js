@@ -1,1 +1,0 @@
-import{y as e,c as o,o as t}from"./index-T23h3mD6.js";const s={class:"page-title head-line"},l={__name:"PosView",setup(a){return e(()=>console.log("POS!")),(c,n)=>(t(),o("p",s," POS-матеріали "))}};export{l as default};
