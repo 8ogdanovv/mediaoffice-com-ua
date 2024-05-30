@@ -5,7 +5,7 @@
 
   <section class="content-absolute height-content content-top-offset gap0_5rem">
 
-    <slide-show-component style="display: inline-block; float: left;"/>
+    <slide-show-component style="display: inline-block; float: left;" />
 
     <div class="content-block">
       <h4 class="text-red">
