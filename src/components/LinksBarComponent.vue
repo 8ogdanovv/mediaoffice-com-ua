@@ -1,5 +1,5 @@
 <template>
-  <ul class="links-bar links-bar-list red-square-marked-list">
+  <ul class="links-bar links-bar-list">
     <li class="links-bar-li">
       <router-link
         to="/service/pos"
